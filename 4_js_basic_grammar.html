@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js기본 문법 </title>
+</head>
+<body>
+    <script>
+        //세미콜론
+        document.write('Hello'); document.write('World')
+
+        // 자료형
+        document.write('정수 : ' + 100 + '<br/>');
+        document.write('실수 : ' + 11.11 + '<br/>');
+        document.write('문자열 : ' + 'Hello' + '<br/>');
+        document.write('문자열 : ' + "hello" + '<br/>');
+        document.write('참 : ' + true + '<br/>');
+        document.write('거짓 : ' + false + '<br/>');
+
+
+        //변수
+        var a = 100;
+        var b = 11.11;
+        var c = '문자열';
+        var d = true;
+        var e;  // undefined
+
+        document.write(a);
+
+
+        //연산자
+        var a = 10;
+        var b = 3;
+        var c = a + b;
+        var c2 = a - b;
+        var c3 = a * b;
+        var c4 = a / b;
+        var c5 = a % b;
+        document.write(c3);
+
+
+        a++;  //a = a + 1, 실행순서의 차이
+        ++a;  //a = a + 1
+        --a;  //a = a - 1
+        a--;  //a = a - 1
+
+        document.write(++a);
+        document.write(a++);
+
+
+        //관계(비교)연산자
+        var a = 10;
+        var b = 3;
+
+
+        var c = a==b;
+        document.write(c)
+
+
+
+
+        c = a != b; //타입과 값이 모두 같아야 true
+        c = a > b;
+        c = a >= b;
+        c = a < b;
+        c = a <= b;
+
+        document.write(c)
+
+
+
+
+        // 삼항연산자, if문과 같다.
+        //조건? 참:거짓
+        a = 10;
+        b = 3;
+        c = a > b? '크다':'작다';
+        document.write(c)
+
+
+
+        // 논리연산자
+        a = 10;
+        b = 3;
+        c = a > 20 && a < 50; // and
+        document.write(c);
+        c = a > 20 || a < 50; // or
+        document.write(c);
+        c = !(a > 5); // not
+        document.write(c);
+
+
+        // 타입연산자
+        a = 100;
+        document.write(typeof a); 
+
+
+    </script>
+</body>
+</html>
